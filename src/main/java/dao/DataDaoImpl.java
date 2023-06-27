@@ -45,7 +45,7 @@ public class DataDaoImpl {
 		try {
 			ret = query.executeUpdate();
 			session.getTransaction().commit();
-			System.out.println("inserted new entry to data_store table for device_id =  " + device_id);
+		//	System.out.println("inserted new entry to data_store table for device_id =  " + device_id);
 
 		} catch (Exception ex) {
 			session.getTransaction().rollback();
